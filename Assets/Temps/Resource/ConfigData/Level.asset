@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562b22c240533847a846cbcce59ba05, type: 3}
+  m_Name: Level
+  m_EditorClassIdentifier: 
+  m_levelInfoList:
+  - m_levelId: 0
+    m_staticObjectList: []
+    m_roomInfoList:
+    - m_id: 0
+      m_roomType: 0
+      m_roomWeight: 10
+      m_rewardWeight: 5
+    - m_id: 1
+      m_roomType: 1
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 2
+      m_roomType: 2
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 3
+      m_roomType: 3
+      m_roomWeight: 0
+      m_rewardWeight: 0
+    - m_id: 4
+      m_roomType: 4
+      m_roomWeight: 0
+      m_rewardWeight: 15
+  - m_levelId: 1
+    m_staticObjectList: []
+    m_roomInfoList:
+    - m_id: 0
+      m_roomType: 0
+      m_roomWeight: 15
+      m_rewardWeight: 5
+    - m_id: 1
+      m_roomType: 1
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 2
+      m_roomType: 2
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 3
+      m_roomType: 3
+      m_roomWeight: 0
+      m_rewardWeight: 0
+    - m_id: 4
+      m_roomType: 4
+      m_roomWeight: 0
+      m_rewardWeight: 0
+  - m_levelId: 2
+    m_staticObjectList: []
+    m_roomInfoList:
+    - m_id: 0
+      m_roomType: 0
+      m_roomWeight: 15
+      m_rewardWeight: 5
+    - m_id: 1
+      m_roomType: 1
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 2
+      m_roomType: 2
+      m_roomWeight: 0
+      m_rewardWeight: 5
+    - m_id: 3
+      m_roomType: 3
+      m_roomWeight: 0
+      m_rewardWeight: 0
+    - m_id: 4
+      m_roomType: 4
+      m_roomWeight: 30
+      m_rewardWeight: 15

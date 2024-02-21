@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f7aacf9da7f5b44afb0d028ad72f7f, type: 3}
+  m_Name: NpcObject
+  m_EditorClassIdentifier: 
+  m_npcInfoList:
+  - m_id: 0
+    m_name: DungeonWorm
+    m_npcType: 0
+    m_hp: 8
+    m_moveSpeed: 1
+    m_attack: 2
+    m_attackSpeed: 1.5
+    m_bulletId: 1
+    m_weight: 2
+    m_resourcePath: Map/TestPrefabs/DungeonWorm
+  - m_id: 1
+    m_name: ForestWorm
+    m_npcType: 0
+    m_hp: 8
+    m_moveSpeed: 1
+    m_attack: 3
+    m_attackSpeed: 1.5
+    m_bulletId: 1
+    m_weight: 2
+    m_resourcePath: Map/TestPrefabs/ForestWorm
+  - m_id: 2
+    m_name: DungeonStatue
+    m_npcType: 0
+    m_hp: 10
+    m_moveSpeed: 0
+    m_attack: 2
+    m_attackSpeed: 6
+    m_bulletId: 1
+    m_weight: 6
+    m_resourcePath: Map/TestPrefabs/DungeonStatue
+  - m_id: 3
+    m_name: ForestStatue
+    m_npcType: 0
+    m_hp: 10
+    m_moveSpeed: 0
+    m_attack: 3
+    m_attackSpeed: 7
+    m_bulletId: 2
+    m_weight: 6
+    m_resourcePath: Map/TestPrefabs/ForestStatue

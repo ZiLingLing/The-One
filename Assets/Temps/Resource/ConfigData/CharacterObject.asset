@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95fbbd5ec64b9d40852391502a336eb, type: 3}
+  m_Name: CharacterObject
+  m_EditorClassIdentifier: 
+  m_characterInfoList:
+  - m_id: 0
+    m_name: "\u73A9\u5BB6"
+    m_hp: 20
+    m_moveSpeed: 2
+    m_attack: 2
+    m_attackSpeed: 0.5
+    m_bulletConfigId: 0
+    m_resourcePath: Map/TestPrefabs/Player

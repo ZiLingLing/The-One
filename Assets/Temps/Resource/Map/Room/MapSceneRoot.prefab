@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3264942343198237356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3264942343198237357}
+  - component: {fileID: 3264942343198237354}
+  - component: {fileID: 3264942343198237363}
+  m_Layer: 0
+  m_Name: MapSceneRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3264942343198237357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264942343198237356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3264942344053557325}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3264942343198237354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264942343198237356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbbc76b4194b1a4aac4613eaffd5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerActorPrefab: {fileID: 6650435144159321840, guid: 61f04949159f2b345a2a2d7a28687a6d, type: 3}
+  m_roomDataGenerator:
+    m_maxHorizontalCount: 20
+    m_maxVerticalCount: 20
+    m_minRoomCount: 7
+    m_maxRoomCount: 9
+    m_safeCount: 3000
+  m_startPrefab: {fileID: 2813095339198369226, guid: bfd87b541ab8a5047aa30fbdf133406d, type: 3}
+  m_normalPrefab:
+  - {fileID: 4807031382197681587, guid: 47183ff7fdfd08140ba02d8042168cc5, type: 3}
+  - {fileID: 2409081314275787991, guid: 0c2782aee6084994f920a959f81ac9d2, type: 3}
+  - {fileID: 5097317539295696120, guid: 603a24c7a4f01734a839ae0c17b02358, type: 3}
+  m_bossPrefab: {fileID: 8472160783671047621, guid: d9718989fcd06fa4dabf0a3ea97eb0d7, type: 3}
+  m_rewardPrefab: {fileID: 6693181916833986917, guid: 99a286d23b929504b8a87ecaccd8dee1, type: 3}
+  m_coinPrefab: {fileID: 3314090059753088111, guid: eaaa75c32ca26924789c966c39c68080, type: 3}
+  m_wallWithDoorPrefab: {fileID: 6487334300871696713, guid: 0bbf5a97dd260a740b0dc24611876585, type: 3}
+  m_wallPrefab: {fileID: 502886292168222784, guid: 0038a71e971a20740a215112b7f44f1c, type: 3}
+  m_parentTrans: {fileID: 3264942344053557325}
+  m_cellSize: {x: 16, y: 16}
+--- !u!114 &3264942343198237363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264942343198237356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43823aa553ce6fc499268a4b565bdf6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  fogDensity: 0.02
+  fogStartDistance: 20
+--- !u!1 &3264942344053557324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3264942344053557325}
+  - component: {fileID: 3264942344053557331}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3264942344053557325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264942344053557324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3264942343198237357}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3264942344053557331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264942344053557324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c7f1d7fdfca1294f8c7abb740efd27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rewardWeights: 
+  m_enemyWeights: 
