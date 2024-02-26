@@ -46,6 +46,15 @@ namespace Roguelike
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=2)"",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""9cc60bc8-8736-4157-888c-271e4daf3548"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -213,6 +222,17 @@ namespace Roguelike
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""206eba43-1218-479c-a9d8-a45ee6999430"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": ""Tap"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -223,6 +243,7 @@ namespace Roguelike
             m_KeyboardAndMouse = asset.FindActionMap("KeyboardAndMouse", throwIfNotFound: true);
             m_KeyboardAndMouse_Movement = m_KeyboardAndMouse.FindAction("Movement", throwIfNotFound: true);
             m_KeyboardAndMouse_Attack = m_KeyboardAndMouse.FindAction("Attack", throwIfNotFound: true);
+            m_KeyboardAndMouse_Pause = m_KeyboardAndMouse.FindAction("Pause", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -286,12 +307,14 @@ namespace Roguelike
         private List<IKeyboardAndMouseActions> m_KeyboardAndMouseActionsCallbackInterfaces = new List<IKeyboardAndMouseActions>();
         private readonly InputAction m_KeyboardAndMouse_Movement;
         private readonly InputAction m_KeyboardAndMouse_Attack;
+        private readonly InputAction m_KeyboardAndMouse_Pause;
         public struct KeyboardAndMouseActions
         {
             private @Input m_Wrapper;
             public KeyboardAndMouseActions(@Input wrapper) { m_Wrapper = wrapper; }
             public InputAction @Movement => m_Wrapper.m_KeyboardAndMouse_Movement;
             public InputAction @Attack => m_Wrapper.m_KeyboardAndMouse_Attack;
+            public InputAction @Pause => m_Wrapper.m_KeyboardAndMouse_Pause;
             public InputActionMap Get() { return m_Wrapper.m_KeyboardAndMouse; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -307,6 +330,9 @@ namespace Roguelike
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
 
             private void UnregisterCallbacks(IKeyboardAndMouseActions instance)
@@ -317,6 +343,9 @@ namespace Roguelike
                 @Attack.started -= instance.OnAttack;
                 @Attack.performed -= instance.OnAttack;
                 @Attack.canceled -= instance.OnAttack;
+                @Pause.started -= instance.OnPause;
+                @Pause.performed -= instance.OnPause;
+                @Pause.canceled -= instance.OnPause;
             }
 
             public void RemoveCallbacks(IKeyboardAndMouseActions instance)
@@ -338,6 +367,7 @@ namespace Roguelike
         {
             void OnMovement(InputAction.CallbackContext context);
             void OnAttack(InputAction.CallbackContext context);
+            void OnPause(InputAction.CallbackContext context);
         }
     }
 }

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C2B2AB6E-68EE-5D73-F4D9-A65BE18DEFBC}</ProjectGuid>
+    <ProjectGuid>{CA9B9A71-EE1F-3CA4-66E0-B7801CB2743C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityGameFramework.Editor</AssemblyName>
@@ -858,7 +858,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{10B3CDAF-92E3-0536-C727-17B35D9F9208}</Project>
+      <Project>{5673A009-7A51-7B80-29C3-10A84105B902}</Project>
       <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

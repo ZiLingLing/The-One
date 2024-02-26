@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{291BEDC5-4287-927D-E0C4-76138D89AAC4}</ProjectGuid>
+    <ProjectGuid>{340DFF38-FF00-CC6F-6206-5D7EA9EC7293}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,27 +58,48 @@
   <ItemGroup>
     <Compile Include="Assets\Temps\Scripts\Characters\Player\PlayerBehaviour.cs" />
     <Compile Include="Assets\Temps\Scripts\Camera\FollowCamera.cs" />
+    <Compile Include="Assets\Temps\Scripts\Debug\InspectorButtonAttribute.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Enemy\EnemyBehaviourBase.cs" />
     <Compile Include="Assets\Temps\Scripts\Managers\CommandFactory.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\BasicButton.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\UIRoot.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\Utils.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\EditorButtonAttribute.cs" />
     <Compile Include="Assets\Temps\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Temps\Scripts\Weapon\EnemyBullet.cs" />
+    <Compile Include="Assets\Temps\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\SpriteSwapper.cs" />
+    <Compile Include="Assets\Temps\Scripts\Managers\ScenesManager.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Enemy\BehaviourTree.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\UIBattle.cs" />
     <Compile Include="Assets\Example\ProcedureExample.cs" />
     <Compile Include="Assets\Temps\Scripts\Command\InputCommand.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\Popup.cs" />
+    <Compile Include="Assets\Temps\Scripts\PostEffect\Script\BrightnessSaturationAndContrast.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Player\AbstractActions.cs" />
+    <Compile Include="Assets\Temps\Scripts\PostEffect\Script\AdditionPostProcessPass.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\PopupOpener.cs" />
+    <Compile Include="Assets\Temps\Scripts\Managers\Launcher.cs" />
     <Compile Include="Assets\Temps\Scripts\Managers\GameObjectPoolManager.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\ForceAspect.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Temps\Scripts\Managers\CommandManager.cs" />
+    <Compile Include="Assets\Temps\Scripts\PostEffect\Script\AdditionPostProcessRendererFeature.cs" />
     <Compile Include="Assets\Temps\Scripts\Managers\EventManager.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\UIMain.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Temps\Scripts\Weapon\PlayerBullet.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Enemy\Soul.cs" />
     <Compile Include="Assets\Temps\Scripts\Weapon\BulletBase.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\UIPause.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\FieldOfView.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\View.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\FogProjector.cs" />
+    <Compile Include="Assets\Temps\Scripts\UI\UISetting.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\Transition.cs" />
     <Compile Include="Assets\Temps\Scripts\Map\MapGenerate.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\FogCoverable.cs" />
+    <Compile Include="Assets\GUIPack-Clean&amp;Minimalist\Demo\Scripts\Tooltip.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Enemy\TestAI.cs" />
     <Compile Include="Assets\GameMain\Scripts\GameEntry.cs" />
     <Compile Include="Assets\Temps\Scripts\Characters\Player\BehavioursBase.cs" />
@@ -87,30 +108,53 @@
     <Compile Include="Assets\Temps\Scripts\FogOfView\Solidify.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Temps\Scripts\PostEffect\Shader\Brightness Saturation And Contrast.shader" />
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\Monsters Ultimate Pack 05 Cute Series\Flora Cute Series\www.meshtint.com.txt" />
     <None Include="Assets\GameFramework\Libraries\link.xml" />
     <None Include="Assets\NavMeshComponents-master\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\Temps\Resource\UI\shiyan\UIFx_Alpha.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
+    <None Include="Assets\Fonts\7000汉字+符号+英文字符集.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.dll" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Demigiant\DOTween\DOTween46.dll" />
     <None Include="Assets\Demigiant\DOTweenPro\DOTweenPro.dll" />
     <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Demigiant\DOTweenPro\DOTweenPro.XML" />
     <None Include="Assets\Temps\Scripts\FogOfView\Shader\ProjectorFogOfWar.shader" />
     <None Include="Assets\GameFramework\Libraries\ICSharpCode.SharpZipLib.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Monsters Ultimate Pack 05 Cute Series\Flora Cute Series\Read me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -896,27 +940,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{C2B2AB6E-68EE-5D73-F4D9-A65BE18DEFBC}</Project>
+      <Project>{CA9B9A71-EE1F-3CA4-66E0-B7801CB2743C}</Project>
       <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{F8558D0F-59F5-9738-B62D-A31600136CDF}</Project>
+      <Project>{EAACD1A2-7457-7835-91CA-F4CA4581956F}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{10B3CDAF-92E3-0536-C727-17B35D9F9208}</Project>
+      <Project>{5673A009-7A51-7B80-29C3-10A84105B902}</Project>
       <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{21C99739-3134-ADDF-1BF5-3349B920B771}</Project>
+      <Project>{B239BCA1-B3F6-3655-C77F-D0A00AD3F83A}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{E5768F3D-21B2-096C-F704-CF87E27D843E}</Project>
+      <Project>{7AE51EE7-023F-FDDC-4B85-82477B1FB7E9}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{5D65ED67-B5A0-4D24-825A-4F1960A44914}</Project>
+      <Project>{D8706BA3-EC71-9C0B-93C6-383E3C685C42}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>

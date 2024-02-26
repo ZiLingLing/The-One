@@ -36,6 +36,8 @@ namespace Roguelike
         private Vector3 m_faceDirection;
         private Vector3 localFaceDirection;
 
+        private bool isPause = false;
+
         private CharacterController m_characterController;
         private Animator m_animator;
         private Collider m_collider;
@@ -43,16 +45,19 @@ namespace Roguelike
         public GameObject m_bullet;
 
         #region 生命周期函数
-        private void OnEnable()
+        private void Awake()
         {
-
             m_input = new Input();
-            m_input.KeyboardAndMouse.Enable();
             m_input.KeyboardAndMouse.Movement.performed += Movement_performed;
             m_input.KeyboardAndMouse.Attack.performed += Attack_performed;
+        }
 
+        private void OnEnable()
+        {
+            m_input.KeyboardAndMouse.Enable();
             EventManager.AddEventListener<float, Object>("Wound", Wound);
-
+            EventManager.AddEventListener("Pause", Pause);
+            EventManager.AddEventListener("Continue", Continue);
             StartCoroutine(AttackIntervalCoroutine(m_attackInverval));
         }
 
@@ -71,24 +76,27 @@ namespace Roguelike
 
         private void Update()
         {
-            m_rotate.Execute(this);
-            m_move.Execute(this);
-            GetSingleChoiceCommand().Execute(this);
+            if (isPause == false)
+            {
+                m_rotate.Execute(this);
+                m_move.Execute(this);
+                GetSingleChoiceCommand().Execute(this);
+            }
         }
 
         private void OnDisable()
         {
             EventManager.RemoveEventListener<float, Object>("Wound", Wound);
-
-            m_input.KeyboardAndMouse.Movement.performed -= Movement_performed;
-            m_input.KeyboardAndMouse.Attack.performed -= Attack_performed;
+            EventManager.RemoveEventListener("Pause", Pause);
+            EventManager.RemoveEventListener("Continue", Continue);
+            m_input.KeyboardAndMouse.Disable();
             StopCoroutine(AttackIntervalCoroutine(m_attackInverval));
 
         }
 
         private void OnDestroy()
         {
-
+            m_input.Disable();
         }
         #endregion
 
@@ -97,7 +105,10 @@ namespace Roguelike
         #region InputSystem相关
         private void Attack_performed(InputAction.CallbackContext obj)
         {
-            m_judgeAttack = obj.ReadValue<float>();
+            if (isPause == false)
+            {
+                m_judgeAttack = obj.ReadValue<float>();
+            }
         }
 
         private void Movement_performed(InputAction.CallbackContext obj)
@@ -107,6 +118,16 @@ namespace Roguelike
 
         }
         #endregion
+
+        private void Pause()
+        {
+            isPause = true;
+        }
+
+        private void Continue()
+        {
+            isPause = false;
+        }
 
         /// <summary>
         /// 角色面朝鼠标位置

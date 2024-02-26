@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{10B3CDAF-92E3-0536-C727-17B35D9F9208}</ProjectGuid>
+    <ProjectGuid>{5673A009-7A51-7B80-29C3-10A84105B902}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityGameFramework.Runtime</AssemblyName>

@@ -80,7 +80,7 @@ namespace Roguelike
         private Vector3 m_spawnPoint=Vector3.zero;
 
         /// <summary>
-        /// 横纵方向的响铃房间偏移量
+        /// 横纵方向的相邻房间偏移量
         /// </summary>
         public float m_verticalOffset;
         public float m_horizontalOffset;
@@ -156,6 +156,8 @@ namespace Roguelike
         /// <summary>
         /// 生成地图
         /// </summary>
+        /// 
+        [InspectorButton("地图生成")]
         public void GenerateMap()
         {
             Init();
@@ -210,12 +212,12 @@ namespace Roguelike
                 m_wallRotate.Clear();
                 for (int i = m_roomList.Count - 1; i >= 0; i--)
                 {
-                    Destroy(m_roomList[i]);
+                    DestroyImmediate(m_roomList[i]);
                     m_roomList.RemoveAt(i);
                 }
                 for (int i = m_wallList.Count - 1; i >= 0; i--)
                 {
-                    Destroy(m_wallList[i]);
+                    DestroyImmediate(m_wallList[i]);
                     m_wallList.RemoveAt(i);
                 }
             }

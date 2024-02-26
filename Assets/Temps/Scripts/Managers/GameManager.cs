@@ -40,7 +40,7 @@ namespace Roguelike
         /// <summary>
         /// 当前地牢层数
         /// </summary>
-        private int m_level;
+        private int m_level = 0;
 
         //生成敌人、Boss、奖励的各项权重
         private float rewardWeight;
@@ -57,7 +57,7 @@ namespace Roguelike
         private void Start()
         {
             //创建地图
-            EventManager.TriggerEvent("GenerateMap");
+            GenerateMap();
 
             //加载角色
             Vector3 entryPosition = EventManager.TriggerEvent<Vector3>("GetEntryPoint");
@@ -190,7 +190,10 @@ namespace Roguelike
         /// </summary>
         private void OnEntryEndRoom()
         {
-            GameObjectPoolManager.SpawnObject(m_boss[Random.Range(0, m_boss.Count)], Vector3.zero,Quaternion.identity,GameObjectPoolManager.EPoolType.None,3f,3f,3f);
+            if (m_level % 3 == 0)
+            {
+                GameObjectPoolManager.SpawnObject(m_boss[Random.Range(0, m_boss.Count)], Vector3.zero,Quaternion.identity,GameObjectPoolManager.EPoolType.None,3f,3f,3f);
+            }
         }
 
         /// <summary>
@@ -205,6 +208,13 @@ namespace Roguelike
             }
             Debug.LogWarning("敌人获取角色的Transform为空");
             return null;
+        }
+
+
+        private void GenerateMap()
+        {
+            m_level++;
+            EventManager.TriggerEvent("GenerateMap");
         }
     }
 }

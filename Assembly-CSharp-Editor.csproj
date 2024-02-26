@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8C9F3BC5-8676-4FF3-7C01-E579DFB948A0}</ProjectGuid>
+    <ProjectGuid>{B744CE1C-CBE2-36B6-BD9A-1EB1000A5A53}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -56,6 +56,7 @@
     <Analyzer Include="D:\VisualStudio2022\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Temps\Scripts\Debug\Editor\InspectorButton.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -910,31 +911,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{291BEDC5-4287-927D-E0C4-76138D89AAC4}</Project>
+      <Project>{340DFF38-FF00-CC6F-6206-5D7EA9EC7293}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{C2B2AB6E-68EE-5D73-F4D9-A65BE18DEFBC}</Project>
+      <Project>{CA9B9A71-EE1F-3CA4-66E0-B7801CB2743C}</Project>
       <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{F8558D0F-59F5-9738-B62D-A31600136CDF}</Project>
+      <Project>{EAACD1A2-7457-7835-91CA-F4CA4581956F}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{10B3CDAF-92E3-0536-C727-17B35D9F9208}</Project>
+      <Project>{5673A009-7A51-7B80-29C3-10A84105B902}</Project>
       <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{21C99739-3134-ADDF-1BF5-3349B920B771}</Project>
+      <Project>{B239BCA1-B3F6-3655-C77F-D0A00AD3F83A}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{E5768F3D-21B2-096C-F704-CF87E27D843E}</Project>
+      <Project>{7AE51EE7-023F-FDDC-4B85-82477B1FB7E9}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{5D65ED67-B5A0-4D24-825A-4F1960A44914}</Project>
+      <Project>{D8706BA3-EC71-9C0B-93C6-383E3C685C42}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>
