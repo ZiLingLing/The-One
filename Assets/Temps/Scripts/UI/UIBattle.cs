@@ -17,6 +17,8 @@ namespace Roguelike
 
         private Input m_input;
 
+        private bool m_isFreeze = false;
+
         private void Awake()
         {
             Init();
@@ -27,18 +29,20 @@ namespace Roguelike
         private void OnEnable()
         {
             EventManager.AddEventListener<float>("UpdateCurrentHealth", UpdateCurrentHealth);
+            EventManager.AddEventListener("UIBattleUnlock", Unlock);
             m_input.KeyboardAndMouse.Enable();
         }
 
         private void OnDisable()
         {
             EventManager.RemoveEventListener<float>("UpdateCurrentHealth", UpdateCurrentHealth);
+            EventManager.RemoveEventListener("Unlock", Unlock);
             m_input.KeyboardAndMouse.Disable();
         }
 
         private void Interaction_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
         {
-            if (m_input.KeyboardAndMouse.Pause.IsPressed())
+            if (m_input.KeyboardAndMouse.Pause.IsPressed() && m_isFreeze == false)
             {
                 Pause();
             }
@@ -51,6 +55,8 @@ namespace Roguelike
             m_pauseButton = this.transform.Find("Pause").GetComponent<Button>();
 
             m_pauseButton.onClick.AddListener(Pause);
+
+            m_isFreeze = false;
         }
 
         /// <summary>
@@ -70,10 +76,14 @@ namespace Roguelike
         /// </summary>
         private void Pause()
         {
-            EventManager.TriggerEvent("Pause");
-            Time.timeScale = 0;
-            m_input.KeyboardAndMouse.Disable();
+            m_isFreeze = true;
+            //EventManager.TriggerEvent("Pause");
             UIManager.Show<View>("UIPause");
+        }
+
+        private void Unlock()
+        {
+            m_isFreeze = false;
         }
     }
 }
