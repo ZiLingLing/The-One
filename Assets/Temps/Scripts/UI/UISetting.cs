@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 namespace Roguelike
 {
@@ -28,6 +30,11 @@ namespace Roguelike
             m_input.Enable();
         }
 
+        private void Update()
+        {
+            Brightness();
+        }
+
         private void OnDisable()
         {
             m_input.Disable();
@@ -46,8 +53,8 @@ namespace Roguelike
 
             m_close.onClick.AddListener(Close);
 
-            m_brightness.value = 0.8f;
-            m_voice.value = 0.8f;
+            m_brightness.value = 0.5f;
+            m_voice.value = 0.5f;
         }
 
         /// <summary>
@@ -65,6 +72,8 @@ namespace Roguelike
         private void Brightness()
         {
 
+            EventManager.TriggerEvent<float>("ChangeBrightness", 0.5f + m_brightness.value);
+            Debug.Log("-----µ±«∞¡¡∂»---"+ (0.5f + m_brightness.value));
         }
 
         /// <summary>

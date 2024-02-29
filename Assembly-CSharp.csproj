@@ -106,6 +106,7 @@
     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureLaunch.cs" />
     <Compile Include="Assets\Temps\Scripts\InputActions\Input.cs" />
     <Compile Include="Assets\Temps\Scripts\FogOfView\Solidify.cs" />
+    <Compile Include="Assets\Temps\Scripts\PostEffect\Script\VolumeScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -127,6 +128,7 @@
     <None Include="Assets\Temps\Resource\UI\shiyan\UIFx_Alpha.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
+    <None Include="Assets\Temps\Scripts\PostEffect\Shader\FogOnYAxis.shader" />
     <None Include="Assets\Fonts\7000汉字+符号+英文字符集.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.dll" />

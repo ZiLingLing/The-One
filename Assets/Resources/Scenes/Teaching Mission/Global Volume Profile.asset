@@ -15,13 +15,13 @@ MonoBehaviour:
   active: 1
   m_brightness:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_saturation:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_contrast:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

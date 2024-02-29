@@ -426,6 +426,7 @@
 "Assets/Temps/Scripts/PostEffect/Script/AdditionPostProcessPass.cs"
 "Assets/Temps/Scripts/PostEffect/Script/AdditionPostProcessRendererFeature.cs"
 "Assets/Temps/Scripts/PostEffect/Script/BrightnessSaturationAndContrast.cs"
+"Assets/Temps/Scripts/PostEffect/Script/VolumeScript.cs"
 "Assets/Temps/Scripts/UI/UIBattle.cs"
 "Assets/Temps/Scripts/UI/UIMain.cs"
 "Assets/Temps/Scripts/UI/UIPause.cs"

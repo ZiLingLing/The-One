@@ -1,0 +1,418 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.20f1c1 (7cf0fbd73406) revision 8188155'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15613 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.20f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+D:/UnityProject/MyRogue/TheOne/The-One
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+54707
+Successfully changed project path to: D:/UnityProject/MyRogue/TheOne/The-One
+D:/UnityProject/MyRogue/TheOne/The-One
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8488] Host "[IP] 192.168.1.102 [Port] 0 [Flags] 2 [Guid] 1379266771 [EditorId] 1379266771 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8DM3D3MQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8488] Host "[IP] 192.168.1.102 [Port] 0 [Flags] 2 [Guid] 1379266771 [EditorId] 1379266771 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8DM3D3MQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 188.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.20f1c1 (7cf0fbd73406)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.20f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProject/MyRogue/TheOne/The-One/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6010 MB
+    Driver:   31.0.15.4628
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.20f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.20f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.20f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.20f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.020703 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 161.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Domain Reload Profiling:
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (549ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (103ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (343ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (162ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.047596 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\MyRogue\TheOne\The-One\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\MyRogue\TheOne\The-One\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 163.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.994 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1995ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1650ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (359ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (988ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (164ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (566ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (34ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5735 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (501.1 KB). Loaded Objects now: 6206.
+Memory consumption went from 247.6 MB to 247.2 MB.
+Total: 4.586100 ms (FindLiveObjects: 0.535900 ms CreateObjectMapping: 0.411800 ms MarkObjects: 3.417100 ms  DeleteObjects: 0.220100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 126203.208977 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Arrow-Left-Icon_2.png
+  artifactKey: Guid(d4cc25a7e4ced475e9940903daa10ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Arrow-Left-Icon_2.png using Guid(d4cc25a7e4ced475e9940903daa10ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c779ab4377d513ab2ec3595cd9ef1f') in 0.170667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Plane-Icon.png
+  artifactKey: Guid(006d0e6863af8485d89d2b67511b4755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Plane-Icon.png using Guid(006d0e6863af8485d89d2b67511b4755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeab3b23fff81f0f9629bc25093ff7a4') in 0.055128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/DemoScene/Abilities/Shield-Icon-Small.png
+  artifactKey: Guid(47b05f4dca0ea403395df8c3cad7c9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/DemoScene/Abilities/Shield-Icon-Small.png using Guid(47b05f4dca0ea403395df8c3cad7c9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a48e0a4bb24f183366bb0a225f2e68') in 0.045506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Share-Icon_2.psd
+  artifactKey: Guid(20a12050329db45678ffb6a7f2c2d388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Share-Icon_2.psd using Guid(20a12050329db45678ffb6a7f2c2d388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045868f3dca0b0f7da14b505369af959') in 0.068409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PSD/Shocked-Smiley-Outline.psd
+  artifactKey: Guid(8375cc4ca3f0f4e80be3239a80728048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PSD/Shocked-Smiley-Outline.psd using Guid(8375cc4ca3f0f4e80be3239a80728048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dc2380747d02028c6ac2efaf12cea6') in 0.041628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Pinned-Notices-Icon.png
+  artifactKey: Guid(5d36a0857ff174611a7254d5155ac277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Pinned-Notices-Icon.png using Guid(5d36a0857ff174611a7254d5155ac277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81e22d48f25276cde14b516219a23dd') in 0.038716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Pinned-Notices-Icon.psd
+  artifactKey: Guid(c1ee1e3c4577841f785c5686938f695c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Pinned-Notices-Icon.psd using Guid(c1ee1e3c4577841f785c5686938f695c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65081a3cfac948030f0b381ade18a7ce') in 0.048369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Head-Icon.png
+  artifactKey: Guid(f4ca640e97ca044199824db37678fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Head-Icon.png using Guid(f4ca640e97ca044199824db37678fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed9dd61c4f32ec839d34cb846cfe073') in 0.033572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys/Smileys_PNG/Shocked-Smiley.png
+  artifactKey: Guid(c467e6c4e53b64114820d91ef8285ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys/Smileys_PNG/Shocked-Smiley.png using Guid(c467e6c4e53b64114820d91ef8285ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72ebe82a09f3b9bd6811d869c2106c8') in 0.044386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Train-Icon.png
+  artifactKey: Guid(1f59fca99811c44fd81b6a707472b106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Train-Icon.png using Guid(1f59fca99811c44fd81b6a707472b106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314a3d0ebed02fe0b9b3b6f77e43effa') in 0.038376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/XBoxOne/White_PSD/Arrow-Up-Button-White.psd
+  artifactKey: Guid(7d41200f3a72644d6b081adaf6364bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/XBoxOne/White_PSD/Arrow-Up-Button-White.psd using Guid(7d41200f3a72644d6b081adaf6364bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb62e63485ed5fa4943453d5b5761b43') in 0.045776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Phone-Icon.png
+  artifactKey: Guid(cadac87c999ce4abb9ca32cc82403c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Phone-Icon.png using Guid(cadac87c999ce4abb9ca32cc82403c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ac91bdee4ec70b14e2b0b43cda3a45') in 0.030516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Coins-x4-Icon.png
+  artifactKey: Guid(01b6196939ba640cc9c9edc04d458b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Coins-x4-Icon.png using Guid(01b6196939ba640cc9c9edc04d458b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6da423010dbabb880676c5ec0ef52ab') in 0.053318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Phone-Icon.png
+  artifactKey: Guid(0f337e4e89a5041a798ab8e6618733b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Phone-Icon.png using Guid(0f337e4e89a5041a798ab8e6618733b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a0e66c04d57c7898bcc5514b47ac36') in 0.042547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PSD/Happy-Smiley-Outline.psd
+  artifactKey: Guid(b29b73e0b4ad74846b281717ff9f5cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PSD/Happy-Smiley-Outline.psd using Guid(b29b73e0b4ad74846b281717ff9f5cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c05cfdffad1281233cbe8deb53c20e') in 0.043806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PNG/Happy-Smiley-Outline.png
+  artifactKey: Guid(373fdb738bbfc426e94cde183a2cbed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys-Outline/Smileys-Outline_PNG/Happy-Smiley-Outline.png using Guid(373fdb738bbfc426e94cde183a2cbed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f86d1c400b1bcbb20330884c432912') in 0.038703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Coins-x4-Icon.psd
+  artifactKey: Guid(5b1a2867b7c4940c8bd2c4cbe326d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Coins-x4-Icon.psd using Guid(5b1a2867b7c4940c8bd2c4cbe326d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b0cc17aab52eb706820d3a6654a9ae') in 0.040032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/XBoxOne/Dark_PSD/Arrow-Right-Button-Dark.psd
+  artifactKey: Guid(ef1bbbba4ec4342a492e122774c6753d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/XBoxOne/Dark_PSD/Arrow-Right-Button-Dark.psd using Guid(ef1bbbba4ec4342a492e122774c6753d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b39df6892a0b0d15808fc242871e76c') in 0.047607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Car-Icon.png
+  artifactKey: Guid(4b960627193a145808d3f41a2a6d3b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Car-Icon.png using Guid(4b960627193a145808d3f41a2a6d3b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dde33ec834c8866dc8127726c774993') in 0.039366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Pinterest-Icon.psd
+  artifactKey: Guid(e7a6429c7714f478595b2164214bd602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Pinterest-Icon.psd using Guid(e7a6429c7714f478595b2164214bd602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b711eaba6f7aac02a28110394e386bfc') in 0.055266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys/Smileys_PSD/Happy-Smiley.psd
+  artifactKey: Guid(176350499de5d4ce4b0c77732e23bb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Smileys/Smileys_PSD/Happy-Smiley.psd using Guid(176350499de5d4ce4b0c77732e23bb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464ceef7e4455e207eaa769d447c57a4') in 0.043465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Car-Icon.png
+  artifactKey: Guid(146680eb8fb604c8494d44e1ca2cd8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Car-Icon.png using Guid(146680eb8fb604c8494d44e1ca2cd8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdd4b085f6c5217a30d6cef0b03eee4') in 0.044210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Basic-Elements/Colors.png
+  artifactKey: Guid(34edc4d2a21534aa09739456d39a8e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Basic-Elements/Colors.png using Guid(34edc4d2a21534aa09739456d39a8e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183f460f3292dc6b3b4c75b86a8a7498') in 0.044708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/PC/Dark_PNG/Command-Button-Dark.png
+  artifactKey: Guid(67f09ff725c5c43a7afe0740c9a054bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/PC/Dark_PNG/Command-Button-Dark.png using Guid(67f09ff725c5c43a7afe0740c9a054bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d23deaad68969cecc10c39155b7ea74') in 0.043195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Trash-Icon.png
+  artifactKey: Guid(60e7ab2562b384647a84faeac344bca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Trash-Icon.png using Guid(60e7ab2562b384647a84faeac344bca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dbb3ba9192a7dc1a590f6fed6b8f02') in 0.044972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Pin-Icon.png
+  artifactKey: Guid(e9b782b42a38a4fac8e97b34c6cd5316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Pin-Icon.png using Guid(e9b782b42a38a4fac8e97b34c6cd5316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b80e9c2dfb7e674439b186d4ad46f1') in 0.033271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/PS4/Dark_PSD/Touchpad-Dark-Dark.psd
+  artifactKey: Guid(71a5dc918869849c79587749616143a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/GameController/PS4/Dark_PSD/Touchpad-Dark-Dark.psd using Guid(71a5dc918869849c79587749616143a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88462f11ce94257a1153dd26c8a83fe9') in 0.038622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Canon-Icon.png
+  artifactKey: Guid(e85bfcd7ca4fc454f9e9e8db9c52dc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Canon-Icon.png using Guid(e85bfcd7ca4fc454f9e9e8db9c52dc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad43a43bf1a8f37147d0be57e2887d6') in 0.033213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Hands-Icon.psd
+  artifactKey: Guid(f6ebec831b1d94201882081e2056a2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Hands-Icon.psd using Guid(f6ebec831b1d94201882081e2056a2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4393c89476347fee47de5b02586154fb') in 0.052805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Trash-Icon.psd
+  artifactKey: Guid(74e0f242ff5ad4e57b73e847ededeac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PSD/Trash-Icon.psd using Guid(74e0f242ff5ad4e57b73e847ededeac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21e10c8fda3ee16f63d389e2fcbb685') in 0.043719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Coins-x4-Icon.png
+  artifactKey: Guid(5845a4aa6b42f411c8fc87b8cf9d6146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-Demo-Small/Icons-Small-White_PNG/Coins-x4-Icon.png using Guid(5845a4aa6b42f411c8fc87b8cf9d6146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce01c31891c56cfe322245fb61ff594f') in 0.038358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Pinterest-Icon.png
+  artifactKey: Guid(7425f0fb70e39461cafef16c813a80b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUIPack-Clean&Minimalist/Sprites/Icons-HighResolution/Icons/Icons-White_PNG/Pinterest-Icon.png using Guid(7425f0fb70e39461cafef16c813a80b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d77f1d1b06791c8d2ecc03a1b7aebe9') in 0.041651 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.048281 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\MyRogue\TheOne\The-One\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\MyRogue\TheOne\The-One\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.938 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1938ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1472ms)
+			LoadAssemblies (238ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (348ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (795ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (536ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (36ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 13.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5593 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (470.2 KB). Loaded Objects now: 6289.
+Memory consumption went from 251.9 MB to 251.5 MB.
+Total: 7.608800 ms (FindLiveObjects: 0.825800 ms CreateObjectMapping: 0.435000 ms MarkObjects: 5.993500 ms  DeleteObjects: 0.352300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
